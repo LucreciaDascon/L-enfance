@@ -1,0 +1,108 @@
+/*para que todos los navegadores me tomen todo mi sitio igual,estandarización, reseteo de espacios a los lados y hacia adentro de las cajas*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*estilo para mi index*/
+header {
+    background-color: antiquewhite;
+    padding: 1.5rem;
+    top: 0;
+    z-index: 1;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+h1 {
+    font-family:  'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+p {
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+}
+body{
+    background-color: rgb(156, 233, 233);
+}
+.corazonestamaño {
+    width: 5rem;
+    height: 5rem;
+}
+
+/*Acá comienza el estilo de mi html "nosotros"*/
+
+.textonegrita {
+    font-weight: bold;
+}
+.tamañoycolor {
+    font-size: larger;
+    text-align: justify;
+    color: black; 
+    line-height: 1.4;
+    font-weight: lighter;
+}
+#colorfondo {
+    background-color: rgb(182, 128, 233);
+}
+
+/*Acá comienza el estilo de Mis productos*/
+#colorfondoproductos {
+    background-color: blanchedalmond;
+}
+.tamañologo {
+    width: 5rem;
+    height: 5rem;
+
+} /*no pude hacerlo funcionar, por lo tanto no logro ver si es el tamaño indicado*/
+.card {
+    border: solid;
+    padding: 2rem;
+    width: 30rem;
+    
+} /*por qué no me lo toma para las dos imagenes?*/
+
+.card__parrafo {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    
+}
+.card__img {
+    width: 20rem;
+    height: 20rem;
+    border: solid;
+    border-color: #000000 (20,20,19);
+    max-width: 100%;
+}
+.descuentos {
+    position: absolute;
+    top: 0;
+    left: 60rem;
+    width: 50%;
+}
+/*display*/
+.menunavegacion {
+    list-style: none;
+    display: flex;
+    margin-right: 2.5rem;
+    justify-content: space-around;
+
+
+}
+/*FLEXBOX*/
+.sectionflex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+/*Acá arranca mi estilo de ubicación*/
