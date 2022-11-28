@@ -104,5 +104,9 @@ body{
     flex-wrap: wrap;
 }
 
-/*BOOSTRAP*/
-
+/*BOOSTRAP*/ 
+#carouselExampleSlidesOnly {
+    width: 50%;
+    margin: 0 auto, 
+}
+/*no funcionó*/
