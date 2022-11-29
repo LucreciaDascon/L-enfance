@@ -62,9 +62,12 @@ body{
     max-width: 100%;
 }
 
+
+   
+
 /*Acá comienza el estilo de Mis productos*/
 #colorfondoproductos {
-    background-color: blanchedalmond;
+    background-image: linear-gradient( 181deg,  rgba(225,109,245,1) 6.9%, rgba(78,248,231,1) 112.8% );
 }
 .tamañologo {
     width: 5rem;
@@ -97,6 +100,53 @@ body{
     left: 60rem;
     width: 50%;
 }
+/*Acá empieza el estilo de CONTACTO*/
+#colorfondocontacto {
+    background-color: #74EBD5;
+background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+.contenedor-label {
+    display: flex;
+    gap: 30px;
+}
+.contenedor-label label {
+    background-color: whitesmoke;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.botonesdiseño {
+ background-color: white;
+ font-weight: bold;
+ padding: 5px 15px;
+}
+.contenedor-botones a {
+    display: none;
+}
+#sitio-web,
+#whatsapp {
+    display: none;
+}
+#sitio-web:checked ~ .contenedor-botones .botonesdiseñoweb { 
+    display: block;
+} /*no está funcionando*/
+
+#whatsapp:checked ~ .contenedor-botones .botonesdiseñowhatsapp {
+    display: block;
+}
+/*Acá comienza el estilo de UBICACION*/
+#colorfondoubicacion {
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
+}
+
+
+
 
 /*FLEXBOX*/
 .sectionflex {
