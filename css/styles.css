@@ -1,163 +1,18 @@
-/*para que todos los navegadores me tomen todo mi sitio igual,estandarización, reseteo de espacios a los lados y hacia adentro de las cajas*/
-* {
-    margin: 0;
-    padding: 0;
-}
-/*estilo para mi index*/
-header {
-    background-color: antiquewhite;
-    padding: 1.5rem;
-    top: 0;
-    z-index: 1;
-}
-ul {
-    list-style-type: none;
-}
-a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-}
+/* Error: expected "{".
+ *   ,
+ * 3 | $header:background-color; antiquewhite; padding: 1.5rem; top: 0;
+ *   |                                       ^
+ *   '
+ *   scss\_variables.scss 3:39  @import
+ *   scss\styles.scss 1:9       root stylesheet */
 
-h1 {
-    font-family:  'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a   \2577 \a 3 \2502  $header:background-color; antiquewhite; padding: 1.5rem; top: 0;\d\a   \2502                                        ^\a   \2575 \a   scss\\_variables.scss 3:39  @import\a   scss\\styles.scss 1:9       root stylesheet';
 }
-
-p {
-font-family: 'Roboto', sans-serif;
-font-weight: bold;
-}
-
-body{
-    background-color: rgb(156, 233, 233);
-}
-
-.corazonestamaño {
-    width: 5rem;
-    height: 5rem;
-}
-
-/*Acá comienza el estilo de mi html "nosotros"*/
-
-.textonegrita {
-    font-weight: bold;
-}
-.tamañoycolor {
-    font-size: larger;
-    text-align: justify;
-    color: black; 
-    line-height: 1.4;
-    font-weight: lighter;
-}
-
-#colorfondo {
-    background-color: rgb(182, 128, 233);
-}
-.img {
-    width: 30rem;
-    height: 20rem;
-    max-width: 100%;
-}
-
-
-   
-
-/*Acá comienza el estilo de Mis productos*/
-#colorfondoproductos {
-    background-image: linear-gradient( 181deg,  rgba(225,109,245,1) 6.9%, rgba(78,248,231,1) 112.8% );
-}
-.tamañologo {
-    width: 5rem;
-    height: 5rem;
-}
-
-.card {
-    border: solid;
-    padding: 2rem;
-    width: 15rem;
-    margin: 1rem;
-    } 
-
-.card__parrafo {
-    font-size: 1.6rem;
-    margin-bottom: 5rem;
-    }
-
-.card__img {
-    width: 20rem;
-    height: 20rem;
-    border: solid;
-    border-color: #000000 (20,20,19);
-    max-width: 100%;
-}
-
-.descuentos {
-    position: absolute;
-    top: 0;
-    left: 60rem;
-    width: 50%;
-}
-/*Acá empieza el estilo de CONTACTO*/
-#colorfondocontacto {
-    background-color: #74EBD5;
-background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
-}
-.contenedor-label {
-    display: flex;
-    gap: 30px;
-}
-.contenedor-label label {
-    background-color: whitesmoke;
-    color: #000000;
-    font-weight: bold;
-    padding: 5px 15px;
-    cursor: pointer;
-}
-.contenedor-contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.botonesdiseño {
- background-color: white;
- font-weight: bold;
- padding: 5px 15px;
-}
-.contenedor-botones a {
-    display: none;
-}
-#sitio-web,
-#whatsapp {
-    display: none;
-}
-#sitio-web:checked ~ .contenedor-botones .botonesdiseñoweb { 
-    display: block;
-} /*no está funcionando*/
-
-#whatsapp:checked ~ .contenedor-botones .botonesdiseñowhatsapp {
-    display: block;
-}
-/*Acá comienza el estilo de UBICACION*/
-#colorfondoubicacion {
-    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgba(83,138,214,1) 0%, rgba(134,231,214,1) 90% );
-}
-
-
-
-
-/*FLEXBOX*/
-.sectionflex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-/*BOOSTRAP*/ 
-#carouselExampleSlidesOnly {
-    width: 50%;
-    margin: 0 auto, 
-}
-/*no funcionó*/
