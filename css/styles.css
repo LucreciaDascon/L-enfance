@@ -1,18 +1,180 @@
-/* Error: expected "{".
- *   ,
- * 3 | $header:background-color; antiquewhite; padding: 1.5rem; top: 0;
- *   |                                       ^
- *   '
- *   scss\_variables.scss 3:39  @import
- *   scss\styles.scss 1:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 3 \2502  $header:background-color; antiquewhite; padding: 1.5rem; top: 0;\d\a   \2502                                        ^\a   \2575 \a   scss\\_variables.scss 3:39  @import\a   scss\\styles.scss 1:9       root stylesheet';
+@charset "UTF-8";
+/*Tamaño de las media queries*/
+body {
+  background-color: rgb(156, 233, 233);
+  font-family: "Roboto", sans-serif;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.tamañologo {
+  height: 8rem;
+}
+
+.nav-item {
+  background-color: white;
+}
+.nav-item a:hover {
+  background-color: aquamarine;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.corazonestamaño {
+  width: 3rem;
+  height: 3rem;
+}
+
+header {
+  padding: 1.5rem;
+  top: 0;
+  z-index: 1;
+}
+
+#colorfondoproductos {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.tamañologo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.card {
+  border: solid;
+  padding: 2rem;
+  width: 15rem;
+  margin: 1rem;
+}
+
+.card__parrafo {
+  font-size: 1.6rem;
+  margin-bottom: 5rem;
+}
+
+.card__img {
+  width: 20rem;
+  height: 20rem;
+  border: solid;
+  border-color: #000000 20, 20, 19;
+  max-width: 100%;
+}
+
+.descuentos {
+  position: absolute;
+  top: 0;
+  left: 40rem;
+  width: 50%;
+  font-weight: bold;
+}
+
+.navbar-text {
+  font-weight: bold;
+}
+
+.textonegrita {
+  font-weight: bold;
+}
+
+.tamañoycolor {
+  font-size: larger;
+  text-align: justify;
+  color: black;
+  line-height: 1.4;
+  font-weight: lighter;
+}
+
+#colorfondo {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.img {
+  width: 30rem;
+  height: 20rem;
+  max-width: 100%;
+}
+
+#colorfondoubicacion {
+  background-image: radial-gradient(circle farthest-corner at 92.3% 71.5%, rgb(83, 138, 214) 0%, rgb(134, 231, 214) 90%);
+}
+
+#colorfondocontacto {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.contenedor-label {
+  display: flex;
+  gap: 30px;
+}
+
+.contenedor-label label {
+  background-color: whitesmoke;
+  color: #000000;
+  font-weight: bold;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.contenedor-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botonesdiseño {
+  background-color: white;
+  font-weight: bold;
+  padding: 5px 15px;
+}
+
+.contenedor-botones a {
+  display: none;
+}
+
+#sitio-web,
+#whatsapp {
+  display: none;
+}
+
+#sitio-web:checked ~ .contenedor-botones .botonesdiseñoweb {
+  display: block;
+}
+
+#whatsapp:checked ~ .contenedor-botones .botonesdiseñowhatsapp {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */

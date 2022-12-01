@@ -1,11 +1,19 @@
 #colorfondoproductos {
-    background-image: linear-gradient( 181deg,  rgba(225,109,245,1) 6.9%, rgba(78,248,231,1) 112.8% );
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 }
 .tamañologo {
     width: 5rem;
     height: 5rem;
 }
 
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
 .card {
     border: solid;
     padding: 2rem;
@@ -29,6 +37,11 @@
 .descuentos {
     position: absolute;
     top: 0;
-    left: 60rem;
+    left: 40rem;
     width: 50%;
+    font-weight: bold;
+}
+
+.navbar-text {
+    font-weight: bold;
 }
