@@ -1,4 +1,18 @@
+#colorfondo {
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+.tituloinicio {
+    text-align: center;
+}
 .corazonestamaño {
-    width: 3rem;
-    height: 3rem;
+    width: 1rem;
+    height: 1rem;
+}
+   
+.container {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
 }
