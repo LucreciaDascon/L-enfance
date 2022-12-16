@@ -25,7 +25,7 @@ img {
 }
 
 .nav-item {
-  background-color: white;
+  background-color: whitesmoke;
 }
 .nav-item a:hover {
   background-color: aquamarine;
@@ -38,20 +38,57 @@ h1, h2, h3 {
   text-align: center;
 }
 
+h1 {
+  display: inline-block;
+  position: relative;
+}
+
+h1::after, h1::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: #000;
+  top: 0.6em;
+}
+
+h1::before {
+  left: -140px;
+}
+
+h1::after {
+  right: -140px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-}
-
-.container {
-  align-items: center;
-  justify-content: center;
 }
 
 header {
   padding: 1.5rem;
   top: 0;
   z-index: 1;
+}
+
+#colorfondo {
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.tituloinicio {
+  text-align: center;
+}
+
+.corazonestamaño {
+  width: 3rem;
+  height: 3rem;
+}
+
+.container {
+  width: 100%;
+  background-position: center center;
+  background-size: contain;
 }
 
 #colorfondoproductos {
@@ -62,6 +99,10 @@ header {
 .tamañologo {
   width: 5rem;
   height: 5rem;
+}
+
+.titulomisproductos {
+  text-align: center;
 }
 
 .flex {
@@ -143,10 +184,22 @@ header {
   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 }
 
+.tituloubicacion {
+  text-align: center;
+}
+
+.btn-wsp {
+  bottom: 30px;
+  right: 30px;
+  background-color: #0df053;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+}
+
 .descuentos {
   font-weight: bold;
   font-size: medium;
-  color: black;
 }
 
 #colorfondocontacto {
