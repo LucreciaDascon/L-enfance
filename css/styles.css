@@ -105,12 +105,11 @@ header {
   text-align: center;
 }
 
-.flex {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-around;
+.gridcard {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-auto-rows: auto;
+  column-gap: 1em;
 }
 
 .card {
@@ -156,8 +155,8 @@ header {
   font-weight: bold;
 }
 
-.textonegrita {
-  font-weight: bold;
+.titulohistoria {
+  text-align: center;
 }
 
 .tamañoycolor {
@@ -206,9 +205,8 @@ header {
   background: #fff;
 }
 
-.descuentos {
-  font-weight: bold;
-  font-size: medium;
+.coder {
+  text-align: center;
 }
 
 #colorfondocontacto {
@@ -236,7 +234,7 @@ header {
 }
 
 .titulocontacto {
-  padding-inline-start: 500px;
+  text-align: center;
 }
 
 .formularioestilos {

@@ -6,18 +6,19 @@
     width: 5rem;
     height: 5rem;
 }
-
 .titulomisproductos { 
     text-align: center;
-
 }
-
-.flexcard {
+.flex-contenedor {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    justify-content: space-around;
+    align-items: center;
+    
+    column-gap: 1em;
+}
+.items-flex {
+    flex-wrap: wrap;
 }
 .card {
     border: solid;
